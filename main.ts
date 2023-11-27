@@ -8,10 +8,9 @@ namespace modules {
 }
 namespace servers {
     function start() {
-        jacdac.productIdentifier = 0x35b7e929
+        jacdac.productIdentifier = 0x35b7e333
         jacdac.deviceDescription = "Grove Relay C16"
         jacdac.startSelfServers(() => {
-
             const servers: jacdac.Server[] =
                 [DigitalPin.C16]
                     .map((pin, i) => {
@@ -21,7 +20,6 @@ namespace servers {
                             pins.digitalWritePin(pin, active)
                         }, {
                             intensityPackFormat: jacdac.RelayRegPack.Active,
-                            instanceName: `COM${i + 1}`,
                             variant: jacdac.RelayVariant.Electromechanical
                         })
                     })
