@@ -1,6 +1,6 @@
 {
     "name": "pxt-grove-relay-jacdac",
-    "version": "0.0.1",
+    "version": "1.0.0",
     "description": "Jacdac for Calliope mini and Seeed grove relay at A1",
     "dependencies": {
         "core": "*",
