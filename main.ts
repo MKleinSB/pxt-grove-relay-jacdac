@@ -8,7 +8,7 @@ namespace modules {
 }
 namespace servers {
     function start() {
-        jacdac.productIdentifier = 0x35b7e333
+        jacdac.productIdentifier = 0x302957c1
         jacdac.deviceDescription = "Grove Relay C16"
         jacdac.startSelfServers(() => {
             const servers: jacdac.Server[] =
